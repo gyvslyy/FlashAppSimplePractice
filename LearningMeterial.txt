@@ -1,0 +1,12 @@
+关于database
+1. 进入python环境
+2. from app import db
+3. db.create_all()  ##创建posts.db文件
+4. from app import BlogPost
+6. db.session.add(BlogPost(title = 'Blog Post 1',content='Content of Blog post 1', author = 'Eric' ))
+7. BlogPost.query.all() ##显示所有
+8. command line:
+BlogPost.query.first(), BlogPost.query[0], BlogPost.query.filter_by(title='').all(), BlogPost.query.order_by(), BlogPost.query.get(id).title ->
+9. db.session.delete(BlogPost.query.get(id)), db.session.commit()
+10. BlogPost.q
+
